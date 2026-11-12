@@ -1,0 +1,12 @@
+@LIN:L1c:0.2
+@CURVE_3POOL_VP{
+  version=1
+  repo="curvefi/curve-contract"
+  source="contracts/pools/3pool/StableSwap3Pool.vy get_D/get_virtual_price"
+  license="all_rights_reserved_informational_upstream"
+  commit="bae23a2fc9a0302d174ea1ffce8219a44a92149c"
+  profile="LINVM-1"
+  class="EXPERIMENTAL"
+  purpose="uint64_scale_curve_3pool_newton_get_D_virtual_price_128bit"
+  note="Not mainnet uint256. N=3 explicit x0,x1,x2. amp and supply are arguments (not ramped A, self.balances, self._xp/RATES, or token.totalSupply). SCALE=1e9 stands in for PRECISION=1e18. Upstream Vyper is hash-pinned, not vendored."
+}
